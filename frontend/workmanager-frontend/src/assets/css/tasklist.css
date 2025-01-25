@@ -1,0 +1,153 @@
+body.tasklist-page {
+    background-color: #f4f5f7;
+}
+
+#tasklist{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f5f7;
+    color: #2d3748;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#tasklist .container{
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 600px;
+    max-height: 1200px;
+    overflow-y: auto;
+    margin-top: 150px;
+    margin-left: auto; 
+    margin-right: auto;
+} 
+
+
+#tasklist h2{
+    font-size: 24px;
+    color: #2c5282;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-task-button {
+    background-color: #007bff; 
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.add-task-button:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+}
+
+.add-task-button:active {
+    background-color: #003f7f; 
+    transform: scale(0.95); 
+}
+
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    background-color: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.task-item h3 {
+    font-size: 18px;
+    margin: 0 0 5px;
+}
+
+.task-item p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #4a5568;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.task-item select{
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.task-item button {
+    background-color: #e53e3e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.task-item button:hover {
+    background-color: #c53030;
+}
+
+.task-item a {
+    color: #3182ce;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+.task-item a:hover {
+    text-decoration: underline;
+}
+
+.filters{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filters label{
+    margin-right: 10px;
+}
+
+.filters select{
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.filters button{
+    padding: 5px 10px;
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.filters button:hover{
+    background-color: #2980B9;
+}
